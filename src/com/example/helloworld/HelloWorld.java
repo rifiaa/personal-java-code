@@ -14,6 +14,7 @@ public class HelloWorld {
        Map<String, Integer> result = list.stream().filter(s -> Integer.parseInt(s.split(",")[1]) >= 24).collect(Collectors.toMap(s -> s.split(",")[0], s -> Integer.parseInt(s.split(",")[1])));
         System.out.println(result);
 
+
     }
 
 }
